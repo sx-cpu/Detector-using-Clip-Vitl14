@@ -1,0 +1,12 @@
+guided: 77.63
+dalle: 80.15
+
+imle: 84.78
+biggan: 82.99
+gaugan: 96.38
+crn: 73.35
+crn: 73.35
+
+ldm_200: 91.68
+glide_100_27: 86.36
+ldm_200_cfg: 69.95

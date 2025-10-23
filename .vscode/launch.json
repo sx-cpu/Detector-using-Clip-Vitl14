@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Validation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/validate.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--real_path",
+                "./diffusion_datasets/laion/0_real",
+                "--fake_path",
+                "./diffusion_datasets/ldm_200_cfg",
+                "--data_mode",
+                "ours",
+                "--max_sample",
+                "1000",
+                "--arch",
+                "CLIP:ViT-L/14",
+                "--ckpt",
+                "./pretrained_weights/fc_weights.pth",
+                "--result_folder",
+                "clip_vitl14",
+                "--batch_size",
+                "128",
+                "--jpeg_quality",
+                "90",
+                "--gaussian_sigma",
+                "2"
+            ]
+        }
+    ]
+}
